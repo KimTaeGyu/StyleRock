@@ -11,6 +11,9 @@ const Box = (props) => {
   } else {// 위의 경우가 아니라면 props&nbsp;로 전달된 결과를 그대로 쓴다.
     result = props.result;
   }
+    
+   // 이부분은 다시 이해하도록 하자 이해한후 다시 깃허브에 올리기
+    
   return (
     <div className={`box ${result}`}>
         <h1>{props.title}</h1>
@@ -20,5 +23,7 @@ const Box = (props) => {
     </div>
   )
 }
+
+//이쪽에도 마무리부분에 props.result였는데 왜 그냥 result 로 바뀌는지에 대한 이유를 알고 
 
 export default Box
